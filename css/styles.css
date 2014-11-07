@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+	width: 100px;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+	text-align:center;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+body {
+	background-color: #ECECEA;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	color: #333;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+	clear: none;
+	float: none;
+	background-color:#FFF;
+}
+
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(51,51,51,.6);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+	border-radius:2px;
+	z-index:100;
+}
+#wrapper{
+	background-color: transparent;
+	padding-bottom:10%;
+}
+#background{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+	background-position:top;
+	background-image: url(file:///C|/sites/2014website/assets/GGB700px.png);
+}
+
+#logo img {
+	width: 0px;
+}
+.heading{
+	font-size: xx-large;
+	padding-top: 2%;
+	color: #999;
+	background-color: #FFF;
+}
+.heading2{
+	font-size="large";	
+}
+#headerNav {
+	padding-bottom:2%;
+	padding-top:2%;
+	margin-top:-1%;
+}
+
+
+#headerNav ul li{
+	width:25%;
+	float:left;
+	font-size:small;
+}
+#headerNav ul li a{	color: #999999;);font-weight:bold;}
+#headerNav ul li a:hover{color: #fff;}
+
+
+#top-header {
+	background-color: #FFF;	
+	float:left;
+	display:none;
+	top:-1em;
+	position:fixed;
+	width:100%;
+}
+
+.top-nav{
+	display: inline;
+	padding: 10px;
+}
+
+
+.top-nav ul li {
+	width:25%;
+	float:left;
+	font-size:small;
+	font-weight:bold;
+}
+
+.top-nav ul li a {
+	color:#666;
+}
+
+.top-nav ul li a.active, .top-nav ul li a:hover {
+	color: rgba(51,51,51,1);
+}
+
+#topName{
+	text-align:center;
+	padding: 15px 0px 0px 0px;
+	font-size:large;
+	color:rgba(102,102,102,1);
+}
+
+#tagLine{
+	font-size: x-large;
+	padding-top:1%;
+	font-weight:300;	
+	margin-left: 0;
+	color: #fff;
+		 	
+}
+.tagDescription{
+	font-style:italic;
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+	font-weight:100;
+	font-size: large;
+	background-color:#FFF;
+}
+
+.twoCol{width:100%;float:left;margin-top:5%;}
+.fourCol{width:100%;}
+
+.colHeader{
+	font-weight: bold;
+	font-size: x-large;
+	color:#666;
+}
+.colTag{
+	font-style:italic;
+	margin-bottom:25px;}
+.colContent{
+	text-align: left;
+	padding-right: 7%;
+	padding-left: 10%;
+	padding-bottom: 5px;
+	font-weight: 400;
+	margin-top:2%;
+}
+
+.toggle{
+	clear: both;
+	width: 150px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #0C3;
+	border-style: solid;
+	border-width: thin;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #CCCCCC;
+	margin-top: 20px;
+	color: #093;
+}
+.toggle img {
+	width: 10px;
+	margin-left: 5px;
+}
+.unhide{
+	clear: both;
+	width: 150px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #0C3;
+	border-style: solid;
+	border-width: thin;
+	text-align: center;
+	padding-top: 5px;
+	background-color: #CCCCCC;
+	margin-top: 20px;
+	color: #093;
+}
+.unhide img {
+	width: 10px;
+	margin-left: 5px;
+}
+#solutions{
+	margin-bottom:10px; 
+	padding-bottom:20px;
+	background-image:url(file:///C|/sites/2014website/assets/diamonds.png);
+	background-repeat:repeat;
+}
+
+#outerFrame{
+	width: 100%;
+	background-color:#fff;
+}
+#frame{
+	padding:20px 0px 20px 0px;
+	float:left;
+	width: 80%;
+	margin-left:10%;
+	margin-top:2%;
+	margin-bottom:2%;
+	background-image: url(file:///C|/sites/2014website/assets/smallipad.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	font-size:x-large;
+
+}
+#frameHeader{
+	color:#FFF;
+	font-size:x-large;
+	font-weight:bold;
+	margin: 10px 0px 20px 0px;
+}
+.darkBack{
+	background-color:rgba(0,0,0,.7);
+	padding: 0px 10px 10px 10px;
+}
+#solutionsDetails{
+	width: 100%;
+	background-color:#fff;
+	padding-bottom:2%;}
+#team{
+	background-color: rgba(242,247,247,1);
+	border-top:rgba(204,204,204,1);
+	border-top-width:thin;
+	border-top-style:solid;
+
+}
+.teamDescription{
+	font-style:italic;
+	padding: 10px;
+	font-weight:100;
+	font-size: large;
+	margin-top:1%;
+}
+.bioDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	-webkit-transition: all 4s ease-in 10s;
+	-moz-transition: all 4s ease-in 10s;
+	transition: all 4s ease-in 10s;
+	-ms-transition: all 4s ease-in 10s;
+	-o-transition: all 4s ease-in 5s;
+	pointer-events: none;
+	display: none;
+	overflow: scroll;
+
+}
+	
+.bioDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+	display: block;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: block 2s linear 1s;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+}
+
+.bioDialog #bio_content {
+	width: 50%;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 2%;
+	padding: 2%;
+	color: #fff;
+	background-color: rgba(0,0,0,.8);
+	border-radius:10px;	
+}
+.closeModal {
+	float: right;
+	clear:left;
+	margin-bottom:5%;
+	margin-right: 20px;
+	font-weight: bold;
+	background-color:#ffffff;
+	font-size:xx-large;
+	padding: 2px;
+	border-radius:50px;
+	
+}
+
+
+#address{
+	padding:10px 0px 10px 0px;
+	font-weight:bold;
+	margin-top: 5%;
+
+}
+.contact{
+	width: 200px;
+	height: 30px;
+	margin-bottom: 2%;
+	padding-top: 5px;
+	float: left;
+	border-style: solid;
+	border-width: medium;
+	border-color: #CCCCCC;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+#phone{
+	text-align: left;
+	color: #666666;
+	width: 50%;
+	margin-left:25%;
+	font-weight: bold;
+}
+#phone img {
+	width: 15px;
+	margin:0px 15px 0px 15px;
+	float:left;
+}
+#email{
+	background-color: #3D7C4B;
+	color:#fff;		
+	width: 50%;
+	margin-left:25%;
+	}
+#copyright{
+	font-size:x-small;
+	padding: 30px 0px 20px 0px;
+	margin-top: 4%;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 98%;
+	padding-left: 1;
+	padding-right: 1%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+#background{background-size: cover;	background-image: url(file:///C|/sites/2014website/assets/ggbridgecropped.png);}
+#logo img {
+	width: 100px;
+	float:left;
+}
+#headerNav {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.twoCol{width:50%;float:left;text-align:center;margin-top:5%;}
+
+
+#tagLine{
+	margin-top: 7%;
+	margin-bottom:2%;
+	font-size:xx-large;
+}
+.tagDescription{
+	width:50%;
+	margin-left:25%;
+}
+.heading{
+	padding-top: 0px;
+	padding-bottom:5%;
+}
+#solutions{
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.teamDescription{
+	width:50%;
+	margin-left:25%;
+}
+#phone{
+	width: 30%;
+	margin-left:20%;
+}
+#email{
+	width: 30%;
+	margin-left:1%;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 82%;
+	max-width: 1232px;
+	padding-left: 0;
+	padding-right: 0;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+
+#headerNav {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#headerNav ul li{
+	font-size:medium;
+
+}
+#top-header {
+	width:82%;
+}
+.tagDescription{
+	width:60%;
+	margin-left:20%;
+}
+.heading{
+	padding-top: 4%;
+}
+#frame{
+	width: 80%;
+	margin-left:10%;
+}
+.teamDescription{
+	width:60%;
+	margin-left:20%;
+}
+
+#team .twoCol a {
+	color: rgba(51,51,51,1);
+	font-size: medium;
+	font-weight: bold;
+}
+#phone{
+	width: 15%;
+	margin-left:35%;
+}
+#email{
+	width: 15%;
+	margin-left:1%;
+}
