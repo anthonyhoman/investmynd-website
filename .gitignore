@@ -5,6 +5,4 @@ bin/
 node_modules/
 vendor/
 selenium/
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries/*.xml
+.idea/
