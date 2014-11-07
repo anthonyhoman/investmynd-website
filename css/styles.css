@@ -25,8 +25,8 @@ img, object, embed, video {
 }
 
 .fluidList {
-    list-style:none;
-    list-style-image:none;
+    list-style: none;
+    list-style-image: none;
     margin:0;
     padding:0;        
 }
@@ -82,7 +82,7 @@ body {
 	background-size: auto;
 	background-attachment: fixed;
 	background-position:top;
-	background-image: url(file:///C|/sites/2014website/assets/GGB700px.png);
+	background-image: url(../assets/GGB700px.png);
 }
 
 #logo img {
@@ -95,7 +95,7 @@ body {
 	background-color: #FFF;
 }
 .heading2{
-	font-size="large";	
+	font-size: large;
 }
 #headerNav {
 	padding-bottom:2%;
@@ -156,7 +156,6 @@ body {
 	font-weight:300;	
 	margin-left: 0;
 	color: #fff;
-		 	
 }
 .tagDescription{
 	font-style:italic;
@@ -228,7 +227,7 @@ body {
 #solutions{
 	margin-bottom:10px; 
 	padding-bottom:20px;
-	background-image:url(file:///C|/sites/2014website/assets/diamonds.png);
+	background-image:url(../assets/diamonds.png);
 	background-repeat:repeat;
 }
 
@@ -243,7 +242,7 @@ body {
 	margin-left:10%;
 	margin-top:2%;
 	margin-bottom:2%;
-	background-image: url(file:///C|/sites/2014website/assets/smallipad.png);
+	background-image: url(../assets/smallipad.png);
 	background-repeat:no-repeat;
 	background-size:cover;
 	color:#FFF;
@@ -269,7 +268,6 @@ body {
 	border-top:rgba(204,204,204,1);
 	border-top-width:thin;
 	border-top-style:solid;
-
 }
 .teamDescription{
 	font-style:italic;
@@ -294,7 +292,6 @@ body {
 	pointer-events: none;
 	display: none;
 	overflow: scroll;
-
 }
 	
 .bioDialog:target {
@@ -308,7 +305,7 @@ body {
 	-moz-opacity: 1;
 }
 
-.bioDialog #bio_content {
+.bioDialog .bio_content {
 	width: 50%;
 	position: relative;
 	margin-left:auto;
@@ -349,7 +346,7 @@ body {
 	border-width: medium;
 	border-color: #CCCCCC;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
+}
 #phone{
 	text-align: left;
 	color: #666666;
@@ -367,7 +364,7 @@ body {
 	color:#fff;		
 	width: 50%;
 	margin-left:25%;
-	}
+}
 #copyright{
 	font-size:x-small;
 	padding: 30px 0px 20px 0px;
@@ -380,7 +377,7 @@ body {
 
 .gridContainer {
 	width: 98%;
-	padding-left: 1;
+	padding-left: 1px;
 	padding-right: 1%;
 	clear: none;
 	float: none;
@@ -393,7 +390,7 @@ body {
 .hide_tablet {
     display: none;
 }
-#background{background-size: cover;	background-image: url(file:///C|/sites/2014website/assets/ggbridgecropped.png);}
+#background{background-size: cover;	background-image: url(../assets/ggbridgecropped.png);}
 #logo img {
 	width: 100px;
 	float:left;
@@ -436,6 +433,7 @@ body {
 	width: 30%;
 	margin-left:1%;
 }
+/* end media query, screen, min-width 481px*/
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -500,4 +498,6 @@ body {
 #email{
 	width: 15%;
 	margin-left:1%;
+}
+/* end media query: screen, min-width 769px */
 }
