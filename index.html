@@ -8,22 +8,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wealth Technology Solutions</title>
+<title>Investmynd</title>
 
 <script src="javascript/jquery-1.9.1.js" type="text/javascript"></script>
 <script src="javascript/modernizr.custom.js"></script>
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
--->
+<!--image "Lake Tahoe NV". Licensed under CC BY-SA 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Lake_Tahoe_NV.jpg#/media/File:Lake_Tahoe_NV.jpg
+ipad image By Robert Scoble [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons-->
+
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -32,205 +29,107 @@ Do the following if you're using your customized build of modernizr (http://www.
 <body>
 <div class="gridContainer clearfix">
 
-	<div id="top-header"> <nav id="menu" class="top-nav">
-		<a href="#wrapper"><div id="topName">WEALTH TECHNOLOGY SOLUTIONS, INC.</div></a><hr>
-	     <ul>
-        	<li><a href="#solutions"><div class="solutions">inProfile</div></a></li>
-            <li><a href="#solutions"><div class="solutions">investingDNA</div></a></li>
-            <li><a href="#team"><div class="team">Team</div></a></li>
-            <li><a href="#address"><div class="contactInfo">Contact</div></a></li>
-    	 </ul>
-	</nav></div>
-	
-    <div id="background">   
-    
-    <div id="wrapper">
-	<!-- logo -->
-    <div id="logo"><img src="assets/WTS.png" alt="WTS" /></div>
-    <!-- /logo -->
-	
-	<!-- nav -->
-    <div id="headerNav">
-   	  <ul>
-        	<li><a href="#solutions"><div class="solutions">inProfile</div></a></li>
-            <li><a href="#solutions"><div class="solutions">investingDNA</div></a></li>
-            <li><a href="#team"><div class="team">Team</div></a></li>
-            <li><a href="#address"><div class="contactInfo">Contact</div></a></li>
-      </ul>
-    </div>
-    
-    
-	<!-- /nav -->
 
- 	<!-- main -->
-    <div id="tagLine">DON'T JUST KNOW YOUR CLIENTS,<br>UNDERSTAND THEM</div>
- 
-    <a href="#solutions"><div class="toggle">Learn More<img src="assets/downTriangle.png" alt="" /></div></a> 
-	<!-- /main -->
- 	</div>
-
-	<div class="heading">WEALTH TECHNOLOGY SOLUTIONS, INC.<div class="tagDescription"  id="intro">	
-      We build mobile wealth management technology backed by behavioral finance science to drive more informed decisions and a better client experience
-    </div>
-</div>	
-
-  <!-- solutions -->
-    <div class="fluid current" id="solutions">
-    <div class="twoCol">
-    	<div class="colHeader">inProfile</div>
-        <div class="colTag">Gain deeper insights</div>
-    	<div class="colContent">State of the art mobile technology that enables wealth advisors to capture and manage comprehensive client profiles, provides deeper insights into client needs and preferences, speeds the on-boarding process, and helps get assets working faster. Eliminate paper questionnaires and intake forms and keep clients in-the-know with iPad and Windows 8 accessibility. </div>
-    </div>
-    <div class="twoCol"> 
-        <div class="colHeader">investingDNA</div>
-        <div class="colTag">Understand your clients</div>
-   	  <div class="colContent">Advanced behavioral science technology that helps wealth advisors gain a better understanding of their clients’ (D)ecision making process, financial (N)eeds, and (A)ttitudes towards risk and investing. In-depth data analysis provides invaluable insights to help deliver a better client experience. </div>
-    </div>
-    
-    </div>
-	<!-- /solutions -->
-           <div id="outerFrame"><div id="frame">
-			<div class="darkBack"><div id="frameHeader">Better Information, Better Decisions</div>&#8226; Unparalleled insights &#8226; Stronger relationships &#8226; <br>Deeper knowledge and understanding &#8226; Integrated data &#8226;  Time and money savings &#8226; Reduced paper</div>
-         </div>
-        			
- </div>       
-	<!-- More -->
-       <div class="fluid" id="solutionsDetails">
-    	<div class="twoCol"> 
-          	<div class="colTag">Data Timeline</div>
-    		<div class="colContent">Track client profile changes, decisions, and events to gain a historical perspective of when and why investment decisions were made. Full audit tracking of changes to profile data helps keep firms compliant and resolve issues.</div>
+	<div class="background">
+<!--nav menu-->
+    <div class="fluidRow" id="header">
+		<div id="logo"><img src=assets/investmyndWhiteBackground.png></div>
+    	<div id="headerNav">
+   	  		<ul>
+        		<li><a href="solutions.html">SOLUTIONS</a></li>
+            	<li><a href="#team"><div class="team">BEHAVIORAL FINANCE</div></a></li>
+            	<li><a href="#address"><div class="contactInfo">CONTACT</div></a></li>
+				<li><a href="#address"><div class="login">Login</div></a></li>
+      		</ul>
     	</div>
-    	<div class="twoCol"> 
-        	<div class="colTag">Client Access</div>
-    		<div class="colContent">Enable clients to enter and update selected profile data, keeping you informed and up-to-date. Client views into timeline and expanded profile data provide the transparency and control they are demanding in these hectic times. </div>
-    	</div>
-        <div class="twoCol"> 
-    		<div class="colTag">Mobile Solutions</div>
-     		<div class="colContent">Wealth management solutions designed for mobile from the start. Optimized for iPad and Windows 8 tablets. Make off-site meetings more efficient and show your firm is tech savvy from day one of the relationship. </div>
-    	</div>
-    	<div class="twoCol"> 
-        	<div class="colTag">Comprehensive Suitability Profile</div>
-    		<div class="colContent">Manage comprehensive client profile data in a single, compliant solution. Meet FINRA and OCC suitability requirements and provide transparency to clients. APIs to get data out and into your portfolio management systems.  </div>
-    	</div>
-        </div> 
-	<!-- /More -->
+	</div>
 
-    <!-- team -->
-    <div class="fluid" id="team">
-    <div class="heading">WEALTH TECHNOLOGY SOLUTIONS, INC.</div>
-      		<div class="teamDescription">We are an experienced team of wealth management technology and behavioral finance experts, working together to drive innovation in wealth management and help advisors and the investors they serve make better informed decisions. </div>
-		    <!-- andrea -->
-        <div class="twoCol">
-    	  <a href="#bio_one"> <img src="assets/andrea.png" alt="president" />   
-        	<div class="heading2">Andrea Bornstein Bayer</div>
-        	<div class="colTag">Co-Founder, President</div></a>
-     		<div id="bio_one" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-		           <div class="heading2">Andrea Bornstein Bayer</div>
-                   <div class="colTag">Co-Founder, President</div>
-                    <div class="colContent">A twenty-five year veteran of wealth management who has driven innovation at industry leaders and pioneers including myCFO, Wilshire Associates, Advent Software, Merrill Lynch, and Wells Fargo. As a former private wealth advisor and technology product manager, Andrea brings a unique perspective, deep domain knowledge, and the functional expertise needed to deliver solutions that meet real needs. Her vision to help investors and the advisors serving them gain a deeper understanding of human behavior in order to make better informed decisions is the foundation for all development at WTS. </div>
+	 <!-- /nav menu-->
 
- 			</div></div>
+ 	<!-- main banner -->
+    <div class="fluidRow" id="mainBanner">
+		<div id="tagLine">You may know your clients, <br>but do you understand them?<BR></div>
+		<div class="tagDescription">Mobile wealth management technology backed by behavioral finance science to drive more informed decisions and a better client experience</div>
+	</div>
+		<div class="button action">Learn More</div>
+		<!-- /main -->
 
-    	</div> 
-        	<!-- /andrea -->
-            <!-- anthony -->
-    	<div class="twoCol">
-          <a href="#bio_two">	<img src="assets/anthony.jpg" />
-			<div class="heading2">Anthony Homan</div>
-        	<div class="colTag">Co-Founder, Head of Engineering</div></a>
-        	<div id="bio_two" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-            <div class="heading2">Anthony Homan</div>
-        	<div class="colTag">Co-Founder, Head of Engineering</div>
-            <div class="colContent">An experienced wealth management technology leader who is passionate about delivering innovative solutions that meet real world needs. Anthony has successfully led engineering teams at Wells Fargo Wealth Management, Finaplex, and Homestead Technologies where he established his deep roots in software development and quality assurance. Wealth management domain expertise combined with top-notch development skills give Anthony the edge required to drive development of industry changing technologies.</div>
- 	 	</div></div>
-        
-        </div>
-        <!-- /andrea -->
-        <!-- hersh -->
-        <div class="twoCol">
-   			<a href="#bio_three"><img src="assets/hersh.png" />
-			<div class="heading2">Hersh Shefrin</div>
-        	<div class="colTag">Behavioral Finance Advisor</div></a>
-        	<div id="bio_three" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-            <div class="heading2">Hersh Shefrin</div>
-        	<div class="colTag">Behavioral Finance Advisor</div>
-            <div class="colContent">Hersh Shefrin is a Professor of Finance at Santa Clara University's Leavey School of Business where he holds the Mario Belotti Chair in the Department of Finance. A pioneer of behavioral finance, Professor Shefrin, together with Meir Statman, introduced the concept of “the disposition effect” in 1985, and coined the term. He has authored numerous books including: <em>A Behavioral Approach to Asset Pricing; Beyond Greed and Fear: Understanding Behavioral Finance and the Psychology of Investing; and, Behavioral Corporate Finance.</em> Professor Shefrin completed his PhD at the London School of Economics in the Economics of Uncertainty.</div>
-            </div></div>
-            
- 	 	</div>
-        <!-- /hersh-->
-         <!-- collin-->
-        <div class="twoCol">
-          <a href="#bio_four">  <img src="assets/collin.jpg" />
-          <div class="heading2">Collin Cohen</div>
-			<div class="colTag">Strategy Advisor</div></a>
-        	<div id="bio_four" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-            <div class="heading2">Collin Cohen</div>
-			<div class="colTag">Strategy Advisor</div>
-            <div class="colContent">Collin is an experienced senior executive and board member with a successful track record building for-profit and non-profit enterprises. His unique blend of operating, private equity, and management consulting experience provides him with the ability to identify, prioritize and execute opportunities to create significant value. His deep skills in strategy development and execution, operating leadership, and financing, make him an invaluable member of the team. Collin started his carrer at Bain & Company, he then went on to lead strategic partnerships and M&A at Advent Software, and serve as President and CFO of Northstar Systems.</div>
- 	 	</div></div>
-        
-        </div>
-     <!-- /collin--> 
-      <!-- ankit-->  
-        <div class="twoCol">
-      		 <a href="#bio_five"><div class="heading2">Ankit Agarwal</div>
-        	<div class="colTag">Engineering</div></a>
-        	<div id="bio_five" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-            <div class="heading2">Ankit Agarwal</div>
-        	<div class="colTag">Engineering</div>
-            <div class="colContent">Ankit leads engineering in India where his breadth of technical knowledge and skills, and wealth management domain expertise, set him apart from the crowd. Ankit started his career at Infosys where he worked on data warehousing, and then moved on to Oracle and GlobalLogic where he focused on mobile development and solutions for the financial services industry, including Northstar/SEI. He is co-founder of Hexaview Technologies, Wealth Technology Solutions' sister company in India.</div>
- 	 	</div></div>
-        
-        </div>
-        <!-- /ankit-->
-        <!-- abhishek--> 
-        
-        <div class="twoCol">
-      		 <a href="#bio_six"><div class="heading2">Abhishek Talwar</div>
-        	<div class="colTag">Engineering</div></a>
-        	<div id="bio_six" class="bioDialog">
-				<div class="bio_content">
-				<a href="#close" title="Close" class="closeModal">X</a>
-            <div class="colContent">Abhishek leads development operations in India where his career in innovation started at The Council of Scientific & Industrial Research (CSIR) in New Dehli, and Sapient. He then went on to hold management positions at Adobe and co-founded Hexaview Technologies. Abhishek holds a US Patent for an algorithm to sync the different cameras in a multi-camera editing workflow (US Patent#:81045671), and patent publication US# 81034773 - "Searching in modified or added PDF content". </div>
- 	 	</div></div>
-        
-        </div>
-
-    <!-- /abhishek-->
-      	</div> 
-    <!-- /team -->
-
-    <!-- contact -->
-    <div class="fluid">
-    	<div id="address">Contact Us</div>
-    	<div class="contact" id="phone"><img src="assets/phone.png" />415.236.3990</div>
-    	<div class="contact" id="email"><a href="mailto:inquiries@wealthtechsolutions.com">email</a></div>
-        <div class="fluid" id="copyright"><hr><br>&copy; 2014 Wealth Technology Solutions, Inc. </div>
-
-    </div>
-    <!-- /contact -->  
-  
-  </div>
+	<!-- impact banner -->
+	<div id="introBanner" class="clearfix">
+		<div id="introTagLine">GOAL-DRIVEN, CLIENT-CENTRIC</div>
+		<a href=""><div class="down"><img src="assets/downarrows.png"></div></a>
+		<div id="introTop"></div><div id="intro">We provide data driven insights into the investor personality <br>to help investors and their advisors engage in a more meaningful way <br>and make better wealth management decisions.	</div>
 
 
-	 <a href="#" class="go-top"> Top </a>
-     
+
+	</div>
+
+
+	<!--solutions-->
+
+		<div id="solutionsBanner" class="clearfix">
+			<div id="leftHome"><a href="solutions.html"><div id="dataNav"class="smallRow">Profile Data <br>Management<br><img src="assets/rightArrowWhite.png"></div></a>
+				<a href="solutions.html"><div id="engNav"class="smallRow">Client Engagement<br><img src="assets/rightArrowWhite.png"></div></a>
+			</div>
+
+			<div id="rightHome" class="tallRow">
+
+				<div class="container">
+					<br>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+						quote 1
+							</div>
+
+							<div class="item">
+								quote 2
+							</div>
+
+							<div class="item">
+								quote 3
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+				<div class="button action">Contact Us</div></div>
+
+		</div>
+
+	<!--/solutions-->
+
+
+
+	</div>
+
+    <!-- footer -->
+
+	<div class="footer">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+		<div id="copyright">&copy; 2015 Wealth Technology Solutions, Inc. </div>
+	</div>
+
+
+
+    <!-- /footer -->
+
+
+	 <a href="#"><div class="go-top">Top</div> </a>
+
 <script>
 		$(document).ready(function() {
 			// Show or hide the sticky footer button
 			$(window).scroll(function() {
-				if ($(this).scrollTop() >300) {
+				if ($(this).scrollTop() >200) {
 					$('#top-header').fadeIn(300);
 					$('.go-top').fadeIn(300);
 					
@@ -244,30 +143,24 @@ Do the following if you're using your customized build of modernizr (http://www.
 			$('.go-top').click(function(event) {
 				event.preventDefault();
 				
-				$('html, body').animate({scrollTop: 0}, 800);
+				$('html, body').animate({scrollTop: 0}, 300);
 			})
 
 		});
 
 			// Animate navigation
-			$('.toggle').click(function(event) {
+			$('.down').click(function(event) {
 					event.preventDefault();
-				$('html, body').animate({scrollTop: $("#intro").offset().top}, 1000);
-			});
-			$('.team').click(function(event) {
-					event.preventDefault();
-				$('html, body').animate({scrollTop: $("#team").offset().top}, 1000);
-			});
-			$('.solutions').click(function(event) {
-					event.preventDefault();
-				$('html, body').animate({scrollTop: $("#intro").offset().top}, 1000);
-			});
-			$('.contactInfo').click(function(event) {
-					event.preventDefault();
-				$('html, body').animate({scrollTop: $("#address").offset().top}, 1000);
-			});
+				$('html, body').animate({scrollTop: $("#introTop").offset().top}, 500);
+		});
 
-</script> 
+
+
+
+</script>
+
+
+
 
 </div>
 </body>

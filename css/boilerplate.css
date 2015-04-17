@@ -56,8 +56,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
    ========================================================================== */
 
 a {text-decoration:none;  }
-a:visited { outline: 0; }
-a:focus { outline: 0; }
+a:visited { outline: 0;color: transparent; }
+a:focus { outline: 0; color:transparent;}
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover, a:active { outline: 0; }
@@ -219,7 +219,7 @@ td { vertical-align: top; }
    Chrome Frame Prompt
    ========================================================================== */
 
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+.chromeframe { margin: 0.2em 0; background: transparent; color: black; padding: 0.2em 0; }
 
 
 /* ==|== primary styles =====================================================
@@ -264,7 +264,7 @@ td { vertical-align: top; }
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
+.clearfix { *zoom: 1;}
 
 
 /* ==|== print styles =======================================================
@@ -274,7 +274,7 @@ td { vertical-align: top; }
 
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
+  a, a:visited { text-decoration:none; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
