@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html5>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
 <!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
@@ -9,12 +9,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Investmynd</title>
+
     <script src="javascript/bootstrap.js" type="javascript"></script>
     <script src="javascript/jquery-1.9.1.js" type="text/javascript"></script>
     <script src="javascript/modernizr.custom.js"></script>
     <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 
     <!--
     To learn more about the conditional comments around the html tags at the top of the file:
@@ -33,151 +38,272 @@
 </head>
 <body>
 <div class="gridContainer clearfix">
+    <div id="solutionsBackground">
 
-    <div id="top-header">
-        <nav class="top-nav" id="menu">
-            <ul>
-                <li><a href="#solutions"><div class="solutions">SOLUTIONS</div></a></li>
-                <li><a href="#team"><div class="team">BEHAVIORAL FINANCE</div></a></li>
-                <li><a href="#address"><div class="contactInfo">CONTACT US</div></a></li>
-            </ul>
-        </nav>
-    </div>
+                <!--nav menu-->
 
 
-        <!--nav menu-->
-        <div class="fluidRow" id="header">
-            <div id="logo"><img src=assets/investmyndWhiteBackground.png></div>
-            <div id="headerNav">
-                <ul>
-                    <li><a href="#solutions"><div class="solutions">SOLUTIONS</div></a></li>
-                    <li><a href="#team"><div class="team">BEHAVIORAL FINANCE</div></a></li>
-                    <li><a href="#address"><div class="contactInfo">CONTACT</div></a></li>
-                    <li><a href="#address"><div class="login">Login</div></a></li>
-                </ul>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid fixed">
+
+                <div class="navbar-header">
+                    <a href="index.html"> <div class="logo"><img src=assets/investmyndWhiteBackground.png></div></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li><a href="solutions.html"><div class="selected">SOLUTIONS</div></a></li>
+                        <li><a href="befi.html">BEHAVIORAL FINANCE</a></li>
+                        <li><a href="#"><div data-toggle="modal" data-target="#sendEmail">CONTACT US</div></a></li>
+                        <li><a href="#">Login</a></li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
 
         <!-- /nav menu-->
 
-   <!--impact-->
-    <div class="fluidRow" id="impactBanner">
-        <div id="impact">
-            <div id="impact1">Clarity</div>
-            <div id="impact2">Insight</div>
-            <div id="impact3">Impact</div>
-        </div>
-        <div id="impactRight" class="xTallRow"> this is it</div>
+   <!--pageNav-->
 
-    </div>
-    <!--/impact-->
-
-
-        <div class="fluidRow" id="benefitsOne">
-            <div class="threeCol">
-                <div class="benefitBlock">
-                    <div class="benefitText">Win more clients by showing that you take the time to understand the unique needs of each individual at the start of every relationship. </div>
-                    <div class="benefitTitle">Understand and Win
-                        <div class="benefitDetails">Past experience, needs, attitudes, and personality traits result in biases that have a significant impact how individuals view investing and the decisions they make. Our ground-breaking investor profiling application helps advisors dig deep into the psyche of the investor to understand those biases and help them avoid many typical investing behavior pitfalls. </div>
+        <div id="solutionsPage" class="clearfix">
+            <div id="leftHome">
+                <a href="#solutionsTop"> <div id="impactBanner" class="clearfix">
+                    <div id="impact">
+                        <div id="impact1">Clarity</div>
+                        <div id="impact2">Insight</div>
+                        <div id="impact3">Impact</div>
                     </div>
+                </div></a>
+                <a href="#dataMgt"><div id="solutionsDataNav"class="smallRow">Client Data <br>Management<br><img src="assets/rightArrowWhite.png"></div></a>
+                <a href="#clientEng"><div id="solutionsEngNav"class="smallRow">Client Engagement<br><img src="assets/rightArrowWhite.png"></div></a>
+            </div>
+    <!--solutionsContent-->
+            <div id="solutionsRight" class="tallRow">
+                <div class="solutionsPanner">
+                    <div class="solutionsRow">
+                        <div class="solutionsHeader" id="solutionsTop">SOLUTIONS</div>
+
+                        <div class="solutionsText narrow">Founded by veteran leaders in wealth management technology and pioneers in behavioral finance, our solutions bring
+                            together cutting-edge mobile technology, practical experience advising some of the world’s wealthiest families,
+                            and decades leading academic research in behavioral finance.  </div>
+                        <div class="solutionsHeading narrow">Modern Technology for a Modern World</div>
+                        <div id="benefitsTiles">
+                        <div class="flip_container">
+                            <div class="flip_card" >
+                                <div class="front">
+                                    <div class="faceFont">Win More Business</div>
+                                    <img src="assets/charity.png">
+                                </div>
+                                <div class="back">
+                                    <p>Win more clients by demonstrating at the very first conversation that you take time to understand the unique needs of every individual. Prospects can answer just a few short questions on your iPad to start getting insights into their investing mindset.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip_container">
+                            <div class="flip_card">
+                                <div class="front">
+                                    <div class="faceFont">Make Better Informed Decisions</div>
+                                    <img src="assets/education.png" class="noMargin">
+                                </div>
+                                <div class="back">
+
+                                    <p>Our ground-breaking profiling application helps dig deep into the investor psyche to help understand their investing biases and help them avoid many typical investing behavior pitfalls. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip_container">
+                            <div class="flip_card">
+                                <div class="front">
+                                    <div class="faceFont">Show Your Tech Savviness</div>
+                                    <img src="assets/LIFESTYLE.png">
+                                </div>
+                                <div class="back">
+
+                                    <p> Today's investors demand the best from advisors, technology included. Designed for mobile from the start, our intuitive design and state-of-the-art architecture provide an unparalleled digital experience. </p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="flip_container">
+                                <div class="flip_card">
+                                    <div class="front">
+                                        <div class="faceFont">Be More Efficient</div>
+                                        <img src="assets/OTHER.png">
+
+                                    </div>
+                                    <div class="back">
+
+                                        <p>View everything you know about a client in one secure location. Client/advisor co-browsing helps eliminate paperwork and streamlines the process to get data into mission critical systems. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="flip_container">
+                            <div class="flip_card">
+                                <div class="front">
+                                    <div class="faceFont">Stand out from the Crowd</div>
+                                    <img src="assets/Family-Icon.png">
+
+                                </div>
+                                <div class="back">
+
+                                    <p>Our creative and fun investor personality analysis actively engages investors, getting them to want to share more, and giving them a reason to visit your website on a regular basis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip_container">
+                            <div class="flip_card">
+                                <div class="front">
+                                    <div class="faceFont">Never Lose a Client</div>
+                                    <img src="assets/femaleSelected.png" class="narrowImg">
+                                </div>
+                                <div class="back">
+
+                                    <p>Armed with insight and knowledge of what really drives an investor, advisors using our tools are better prepared to meet their clients’ needs. The end result is more satisfied, and stickier, clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div id="dataMgt">
+                            <div class="dataMgtWrapper"><div class="solutionsHeading narrow">Client Profile Data Management</div>
+                            <div class="solutionsHeader2 narrowItal">Increase operational efficiency while “Wowing” clients with an unparalleled digital experience.</div>
+                            <div class="solutionsText narrow"><br>Our comprehensive investor profile is based on decades of research in behavioral finance and real-life
+                                experience managing investments for high net worth individuals. Each question was carefully evaluated by renowned economist and pioneer in behavioral finance,
+                                Professor Hersh Shefrin.</div>
+
+                        <!--challenges-->
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <div class="solutionsQuestion"><strong>Your Challenge:<br></strong>
+                                            <em>"I have state-of-the-art portfolio reporting but still use <em><strong>paper questionnaires</strong></em>."</em></div>
+                                        <img src="assets/downRightAngle.png">
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                    <div class="panel-body"><div class="panelBullet "><strong>Our Solution: Paperless Discovery</strong> <br>Bringing a new client on-board should
+                                        be efficient and easy for everyone. Our client data intake solution is optimized for the iPad so you never need to take paper forms to a meeting again.
+                                         You can ask the questions and enter the responses for your client/prospect, or have them respond directly by handing them an iPad/tablet or having them complete the questions on their own time, either before or after your meeting.
+                                        </div>
+                                    </div></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <div class="solutionsQuestion"><strong>Your Challenge:<br></strong> <em>"I have <em><strong>
+                                            multiple questionnaires</strong></em> for everything from KYC and account opening, to risk tolerance,
+                                            IPS, and client interests. "</em> </div>
+                                           <img src="assets/downRightAngle.png">
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body"><div class="panelBullet narrow"><strong>Our Solution: Comprehensive Profiles</strong> <br>A centralized place to capture, manage, and view everything you know about a client. Create and manage comprehensive client
+                                        profiles including personal demographics, investing preferences and restrictions, financial and personal goals, hobbies and
+                                        interests, assets/income/expenses, risk tolerance, lifestyle, financial behavioral traits and biases all in one easily accessible location. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><div class="solutionsQuestion"><strong>Your Challenge:<br></strong> <em>"I
+                                            have to  <strong> fumble through meeting notes and emails</strong> every time I need to reference when and why decisions were made."</em> </div>
+                                             <img src="assets/downRightAngle.png"></a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body"><div class="panelBullet"><strong>Our Solution: Profile Audit Tracking</strong> <br>Easily view what, why, and when changes were made to
+                                        all client data, including goals, needs, preferences, and risk tolerance. Meet compliance requirements with complete audit logging of all profile data changes. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><div class="solutionsQuestion"><strong>Your Challenge:<br></strong> <em>
+                                            "My practice is focused on understanding the whole picture. We need tools to help us manage a <strong>complex set of client
+                                            information</strong>."</em> </div>
+                                            <img src="assets/downRightAngle.png"></a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body"><div class="panelBullet"><strong>Our Solution: Flexible Subscription Plans</strong> <br>We understand that every firm has unique needs. Our flexible
+                                        subscription model gives you access to comprehensive client profile data management tools without breaking the bank.
+                                        If financial planning software is overkill for you because you do not create "plans", we can help. </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--/challenges-->
+                <div id="clientEng">
+
+                    <div class="solutionsHeading narrow "><hr>Client Engagement</div><hr>
+
+                    <div class="cliEngSolutionsContainer">
+                        <div class="row">
+
+                         <div class="col-sm-4 solutionsBullet"><div class="heading1">Collaborative</div> <br>Make meetings more <em><strong>productive</strong></em>
+                             by getting important information about client life events before you meet. </div>
+                         <div class="col-sm-4 solutionsBullet"><div class="heading1">Transparent</div> <br>Clients see what you see, giving them <em><strong>insight
+                         </strong></em> into the wealth management process.</div>
+                            <div class="col-sm-4 solutionsBullet"><div class="heading1">Not a "Robo"</div> <br>Designed to spark meaningful <em><strong>conversations</strong></em> between investors and
+                                their advisors. </div>
+                            <div class="col-sm-4 solutionsBullet"><div class="heading1">Mobile</div> <br>Built for the tablet
+                             from the start – capture, manage, and view client data <em><strong>anywhere</strong></em>, anytime. </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+        <!-- ContactModal -->
+        <div class="modal fade" id="sendEmail" role="dialog" >
+            <div class="modal-dialog">
+                <div class="modal-content"><div class="logo"><img src=assets/investmyndWhiteBackground.png></div>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="buttonSquare blue mailTo" ><a href="mailto:inquiries@wealthtechsolutions.com">Request a Demo</a></div>
+                        <div class="contactInfo soutionsText"><br><br>Wealth Technology Soluions, Inc.<br>11501 Dublin Blvd, Suite 200<br>Dublin, CA 94568<br><br></div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-
-        <!--/benefit-->
-
-        <!-- solutions -->
-
-
-
-        <!-- team -->
-        <div class="fluidRow" id="team">
-            <div class="heading">WEALTH TECHNOLOGY SOLUTIONS, INC.</div>
-            <div class="teamDescription">We are an experienced team of wealth management technology and behavioral finance experts, working together to drive innovation in wealth management and help advisors and the investors they serve make better informed decisions. </div>
-            <!-- andrea -->
-            <div class="twoCol">
-                <a href="#bio_one"> <img class="bioImage" src="assets/andrea.png" alt="president" />
-                    <div class="heading2">Andrea Bornstein Bayer</div>
-                    <div class="colTag">Co-Founder, President</div></a>
-                <div id="bio_one" class="bioDialog">
-                    <div class="bio_content">
-                        <a href="#close" title="Close" class="closeModal">X</a>
-                        <div class="heading2">Andrea Bornstein Bayer</div>
-                        <div class="colTag">Co-Founder, President</div>
-                        <div class="colContent">A twenty-five year veteran of wealth management who has driven innovation at industry leaders and pioneers including myCFO, Wilshire Associates, Advent Software, Merrill Lynch, and Wells Fargo. As a former private wealth advisor and technology product manager, Andrea brings a unique perspective, deep domain knowledge, and the functional expertise needed to deliver solutions that meet real needs. Her vision to help investors and the advisors serving them gain a deeper understanding of human behavior in order to make better informed decisions is the foundation for all development at WTS. </div>
-
-                    </div></div>
-
-            </div>
-            <!-- /andrea -->
-            <!-- anthony -->
-            <div class="twoCol">
-                <a href="#bio_two">	<img class="bioImage" src="assets/anthony.jpg" />
-                    <div class="heading2">Anthony Homan</div>
-                    <div class="colTag">Co-Founder, Head of Engineering</div></a>
-                <div id="bio_two" class="bioDialog">
-                    <div class="bio_content">
-                        <a href="#close" title="Close" class="closeModal">X</a>
-                        <div class="heading2">Anthony Homan</div>
-                        <div class="colTag">Co-Founder, Head of Engineering</div>
-                        <div class="colContent">An experienced wealth management technology leader who is passionate about delivering innovative solutions that meet real world needs. Anthony has successfully led engineering teams at Wells Fargo Wealth Management, Finaplex, and Homestead Technologies where he established his deep roots in software development and quality assurance. Wealth management domain expertise combined with top-notch development skills give Anthony the edge required to drive development of industry changing technologies.</div>
-                    </div></div>
-
-            </div>
-            <!-- /andrea -->
-            <!-- hersh -->
-            <div class="twoCol">
-                <a href="#bio_three"><img class="bioImage" src="assets/hersh.png" />
-                    <div class="heading2">Hersh Shefrin</div>
-                    <div class="colTag">Behavioral Finance Advisor</div></a>
-                <div id="bio_three" class="bioDialog">
-                    <div class="bio_content">
-                        <a href="#close" title="Close" class="closeModal">X</a>
-                        <div class="heading2">Hersh Shefrin</div>
-                        <div class="colTag">Behavioral Finance Advisor</div>
-                        <div class="colContent">Hersh Shefrin is a Professor of Finance at Santa Clara University's Leavey School of Business where he holds the Mario Belotti Chair in the Department of Finance. A pioneer of behavioral finance, Professor Shefrin, together with Meir Statman, introduced the concept of “the disposition effect” in 1985, and coined the term. He has authored numerous books including: <em>A Behavioral Approach to Asset Pricing; Beyond Greed and Fear: Understanding Behavioral Finance and the Psychology of Investing; and, Behavioral Corporate Finance.</em> Professor Shefrin completed his PhD at the London School of Economics in the Economics of Uncertainty.</div>
-                    </div></div>
-
-            </div>
-            <!-- /hersh-->
-            <!-- collin-->
-            <div class="twoCol">
-                <a href="#bio_four">  <img class="bioImage" src="assets/collin.jpg" />
-                    <div class="heading2">Collin Cohen</div>
-                    <div class="colTag">Strategy Advisor</div></a>
-                <div id="bio_four" class="bioDialog">
-                    <div class="bio_content">
-                        <a href="#close" title="Close" class="closeModal">X</a>
-                        <div class="heading2">Collin Cohen</div>
-                        <div class="colTag">Strategy Advisor</div>
-                        <div class="colContent">Collin is an experienced senior executive and board member with a successful track record building for-profit and non-profit enterprises. His unique blend of operating, private equity, and management consulting experience provides him with the ability to identify, prioritize and execute opportunities to create significant value. His deep skills in strategy development and execution, operating leadership, and financing, make him an invaluable member of the team. Collin started his carrer at Bain & Company, he then went on to lead strategic partnerships and M&A at Advent Software, and serve as President and CFO of Northstar Systems.</div>
-                    </div></div>
-
-            </div>
-            <!-- /collin-->
-
-
+        <div class="footer">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div id="copyright">&copy; 2015 Wealth Technology Solutions, Inc. </div>
         </div>
-        <!-- contact -->
-        <div class="fluid" id="contact">
-            <div id="address">Contact Us</div>
-            <div class="contact" id="phone">415.236.3990</div>
-            <div class="contact" id="email"><a href="mailto:inquiries@wealthtechsolutions.com">email</a></div>
-            <div class="fluid" id="copyright"><hr><br>&copy; 2015 Wealth Technology Solutions, Inc. </div>
+            </div>
 
-        </div>
 
-    <div class="button action">Contact Us</div>
-    <div class="footer">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div id="copyright">&copy; 2015 Wealth Technology Solutions, Inc. </div>
-    </div>
-        <!-- /contact -->
+
+        <!-- /footer -->
 
 
     <a href="#" class="go-top"> Top </a>
@@ -185,7 +311,7 @@
     <script>
         $(document).ready(function() {
             // Show or hide the sticky footer button
-            $(window).scroll(function() {
+            $('.solutionsPanner').scroll(function() {
                 if ($(this).scrollTop() >300) {
                     $('#top-header').fadeIn(300);
                     $('.go-top').fadeIn(300);
@@ -200,7 +326,7 @@
             $('.go-top').click(function(event) {
                 event.preventDefault();
 
-                $('html, body').animate({scrollTop: 0}, 300);
+                $('.solutionsPanner').animate({scrollTop: 0}, 300);
             })
 
         });
@@ -231,7 +357,10 @@
             $(this).toggleClass('clicked');
         });
 
-
+        // flip toggle
+        $('.flip_card').on('click', function() {
+            $(this).toggleClass('flipped');
+        });
 
     </script>
 
