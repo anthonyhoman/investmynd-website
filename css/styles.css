@@ -34,7 +34,7 @@ body {
 }
 
 .background{
-	background-image:url(../assets/stairs2.png);
+	background-image:url(../assets/stairs.jpg);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
