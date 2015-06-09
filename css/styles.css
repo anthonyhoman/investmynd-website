@@ -34,6 +34,8 @@ body {
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
     color: #666666;
 }
+a:hover{ text-decoration: none !important;
+}
 
 .background {
     background-image: url(../assets/stairs.jpg);
