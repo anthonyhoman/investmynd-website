@@ -37,12 +37,6 @@ body {
 a:hover{ text-decoration: none !important;
 }
 
-.background {
-    background-image: url(../assets/stairs.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
 #solutionsBackground {
     background-image: url(../assets/beach.JPG);
@@ -52,13 +46,7 @@ a:hover{ text-decoration: none !important;
 
 }
 
-#befiBackground {
-    background-image: url(../assets/trees.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 
-}
 
 /* Mobile Layout: 480px and below. */
 
@@ -66,7 +54,6 @@ a:hover{ text-decoration: none !important;
     width: 100%;
     clear: none;
     float: none;
-
 }
 
 .zeroMargin_mobile {
@@ -118,7 +105,6 @@ hr {
 }
 
 .navbar-right {
-
     margin-right: 15px !important;
 }
 
@@ -134,18 +120,22 @@ nav ul li {
     text-align: left;
     border-bottom: solid 1px #cccccc;
     background-color: #ffffff !important;
-    font-size: 18px !important;
+    font-size: 21px !important;
     font-weight: 100 !important;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 }
 
 .nav > li > a:focus {
     background-color: #ffffff !important;
-    color: #999999 !important;
+    color: #999999;
+}
+
+.nav > li > a {
+    color: #203880 !important;
 }
 
 .nav > li > a:visited {
-    color: #337ab7 !important;
+    color: #203880 !important;
 }
 
 .selected {
@@ -154,13 +144,13 @@ nav ul li {
 
 /*----footer----*/
 .footer {
-    background-color: rgb(21, 20, 41);
     float: left;
     width: 100%;
     height: 30px;
-    color: #999999;
+    color: #7f7f7f;
     position: fixed;
     bottom: 0px;
+    padding: 15px;
 }
 
 .footer ul {
@@ -191,23 +181,80 @@ nav ul li {
 }
 
 .tallRow {
+    height:250px;
 }
 
 .medRow {
     height: 85px;
 }
+.blankRow{
+    width:100%;
+    height:50px;
+}
+.borderLeft{
+    border-left: solid 1px #cccccc;
+}
+.borderRight{
+    border-right: solid 1px #cccccc;
+}
+.borderTop{
+    border-top: solid 1px #cccccc;
+}
+.borderBottom{
+    border-bottom: solid 1px #cccccc;
+}
+.orangeBanner{
+    width:100%;
+    padding-top:2%;
+    background-color: rgba(224, 224, 224, 0.9);
+}
+.tanBanner{
+    width:100%;
+    padding-top:2%;
+    border-top: solid 2px #cccccc;
+    background-color: #e0e0e0;
+}
+/*----scrollbar----*/
+::-webkit-scrollbar {
+    width: 12px;
+}
 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 46, 0.6);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(158, 158, 158, 0.6);
+}
 /*----buttons----*/
 .button {
     width: 150px;
     height: 30px;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
-    color: #ffffff;
-    padding-top: 5px;
+    border-radius: 5px;
+    padding-top: 2px;
     font-size: large;
+    cursor: pointer;
+    line-height: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.buttonLeft {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding-top: 2px;
+    font-size: large;
+    cursor: pointer;
+    line-height: 1em;
+    margin-left:10%;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .buttonSquare {
@@ -221,33 +268,19 @@ nav ul li {
     font-size: large;
     color: #ffffff;
 }
-
-.white {
-    background-color: #ffffff;
-    color: #6aafd9;
-
-}
-
-.clear {
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.smoke {
-    background-color: rgba(1, 1, 1, .8);
-    color: #ffffff;
-}
-
-.lightSmoke {
-    background-color: rgba(136, 136, 136, 0.80);
-    color: #ffffff;
-}
-
-.medSmoke {
-    background-color: rgba(1, 1, 1, 0.70);
-    color: #ffffff;
+.buttonWide{
+    width: 250px;
+    height: 40px;
+    border-radius: 2px;
+    padding-top: 6px;
+    font-size: 21px;
+    cursor: pointer;
+    line-height: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .button a {
@@ -258,20 +291,62 @@ nav ul li {
     color: #ffffff !important;
 }
 
-.blue {
-    background-color: #203880;
+.white {
+    background-color: #ffffff;
+    color: #6aafd9;
+
+}
+
+.clear {
+    background-color: transparent;
+    border: 1px solid #777777;
+    color: #777777;
+}
+
+.smoke {
+    background-color: rgba(1, 1, 1, .8);
     color: #ffffff;
 }
 
+.lightSmoke {
+    background-color: rgba(136, 136, 136, 0.50);
+    color: #ffffff;
+}
+
+.medSmoke {
+    background-color: rgba(1, 1, 1, 0.40);
+    color: #ffffff;
+}
+
+.blue {
+    border: solid 3px #182c5c;
+    background-color: #00002e;
+    color: #ffffff;
+}
+.brightBlue{
+    background-color: #161c5c;
+    color: #ffffff;
+}
 .lightBlue {
     background-color: #72c9f4;
     color: #ffffff;
 }
-
+.mindBackground{
+    background-image: url(../assets/wallStreetBrain3Tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#ffffff;
+}
 .action {
     background-color: #b75821;
-    box-shadow: 1px 1px 1px 0px #222222;
-}
+    border: solid 3px #ea6b2a;
+    color: #ffffff;
+  }
+.actionTransparent {
+    background-color: rgba(183, 88, 33, .9);
+    border: solid 3px #ea6b2a;
+    color: #ffffff;
+    }
 
 .down {
     width: 25px;
@@ -280,67 +355,154 @@ nav ul li {
     margin-bottom: 25px;
     margin-top: 10px;
 }
+.linkBar{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border:none;
+    position: absolute;
+    bottom: 0px;
+}
 
 /*----Headings----*/
 .heading {
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1em;
 }
 
 .heading1 {
     font-size: 32px;
-
+    line-height: 1em;
 }
 
 .heading2 {
     font-size: 24px;
     width: 100%;
     float: left;
-    font-weight: 300;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 }
 
 .heading3 {
     font-size: 26px;
-    font-weight: 300;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    line-height: 1em;
 }
 
+.heading4 {
+    font-size: 18px;
+
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    line-height: 1em;
+}
+.heading5{
+    font-size: 3.8rem;
+}
 .narrow {
     line-height: 1.2em;
-    font-weight: 200;
-    color: #4e4e4e;
+    font-weight: 300;
 }
 
 .narrowItal {
+    line-height: 1.2em;
+    font-weight: 200;
     font-style: italic;
+}
+ .italic{
+     font-style: italic;
+ }
+.left{
+    text-align: left;
+}
+ .divider{
+     height: 90px;
+     padding-top: 30px;
+ }
+.narrowDivider{
+    height: 75px;
+    padding-top: 25px;
+}
+/*----Images----*/
+.medImg img {
+    width: 70%;
+    padding-top: 25px;
 }
 
 /*----HomePage Main Banner----*/
 
 #mainBanner {
-    padding-top: 150px;
-    padding-bottom: 5%;
-    background-color: rgba(1, 1, 1, 0.40);
-    color: #ffffff;
+    margin-top: 50px;
+    height: 800px;
 }
 
-#tagLine {
+#myCarousel {
     width: 100%;
-    float: left;
+    height: 700px;
+}
 
+.carousel-control{
+    width: 10%
+}
+.carousel-control.left{
+    background-image:none;
+}
+.carousel-control.right{
+    background-image:none;
+}
+.carousel-inner {
+    width:100%;
+}
+.mainBackground {
+    width:100%;
+    background-image: url(../assets/wallStreetBrainPhone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+}
+.item {
+    width: 100%;
+    height: 800px;
+    font-size: 32px;
+    padding: 3%;
+}
+
+.itemLabel {
+    text-align: left;
+    font-size: 24px;
+    font-style: italic;
+
+   }
+
+.itemContent {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /*----HomePage intro banner----*/
 #introBanner {
-    background-color: #fefefe;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #2d2d2d;
+     color: #2d2d2d;
+
 }
 
-#introTitle {
+.introTitle {
     font-style: italic;
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
     font-weight: 200;
@@ -348,125 +510,306 @@ nav ul li {
     margin-top: 10%;
 }
 
-#introTagLine {
-    background-color: rgba(1, 1, 1, 0.60);
-    color: #ffffff;
-}
 
-#intro {
+.intro {
     line-height: 1em;
-    text-align: justify;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .introText {
-    font-size: 24px;
     text-align: left;
+    width:80%;
+    padding-top: 15px;
+    margin-left:10%;
+    font-size: 24px;
     font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 }
 
-.ipadImg img {
-    width: 250px;
-    margin-bottom: 3%;
-    border: solid 1px #cccccc;
-}
-
-#leftHome {
-    width: 100%;
+/*----Blog----*/
+.amazonLink{
     float: left;
-    font-size: 24px;
-    line-height: 1em;
+    margin-right: 10px;
+}
+.blogText a{
+    color: #505050;
+}
+.blogText a:hover{
+    color: #0c1c80;
 }
 
-#rightHome {
+#blogBanner{
+    height:1500px;
+    width:100%;
+    padding-top:2%;
+    background-color: #e0e0e0;
+}
+
+.blogBox{
+    width:100%;
+    margin-top: 20px;
+    color: #ffffff;
+    box-shadow: 3px 3px 4px 1px #3a3a3a;
+    position: relative;
+    height:200px;
+}
+.blogBoxContent{
     width: 100%;
-    float: left;
-    height: 650px;
-    background-color: rgba(1, 1, 1, 0.40);
-    color: #ffffff;
-}
-
-#solutionsNav {
-    padding: 20px 0px 5px 0px;
-    width: 100%;
-    border-bottom: solid 1px #999999;
-    background-color: rgba(1, 1, 1, 0.20);
-    color: #ffffff;
-}
-
-#solutionsNav:hover {
-    background-color: #4a6f8e;
-    color: #ffffff;
-}
-
-#solutionsNav img {
-    width: 30px;
-}
-
-#dataNav {
-    padding: 10px 0px 5px 0px;
-    width: 100%;
-    border-bottom: solid 1px #999999;
-    background-color: rgba(1, 1, 1, 0.40);
-    color: #ffffff;
-
-}
-
-#dataNav:hover {
-    background-color: #4a6f8e;
-    color: #ffffff;
-}
-
-#dataNav img {
-    width: 30px;
-}
-
-#engNav {
-    padding: 10px 0px 5px 0px;
-    background-color: rgba(1, 1, 1, 0.60);
-    width: 100%;
-    color: #ffffff;
-
-}
-
-#engNav:hover {
-    background-color: #4a6f8e;
-    color: #ffffff;
-}
-
-#engNav img {
-    width: 30px;
-}
-
-#myCarousel {
-    width: 70%;
-    margin-left: 15%;
-}
-
-.carousel-inner {
-    margin-top: 25px;
-    height: 550px;
-    width: 60%;
-}
-
-.item {
-    width: 70%;
-    margin-left: 10%;
-    height: 350px;
-    font-size: 32px;
-}
-
-.itemLabel {
-    text-align: left;
-}
-
-.itemContent {
-    font-style: italic;
+    height:200px;
     font-size: 21px;
+    line-height: 1em;
+    font-weight: bold;
+    background-color: rgba(1,1,1,.4);
+}
+.blogContent{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    text-align: left;
+
+}
+.blogClip{
+    width: 90%;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 5px;
+
+}
+.blogTitle{
+    font-size: 28px;
+    color:#000000;
+    line-height: 1em;
+    margin-bottom:5px;
+}
+.blogClip img{
+    float:left;
+    margin-right: 5px;
+    height: 75px;
+
+}
+.blogContent img{
+    float:left;
+    margin-right: 5px;
+    height: 75px;
+}
+.blogDate{
+    font-size: 18px;
+    color: #959595;
+    line-height: 1em;
+    font-style: italic;
+    margin-bottom:10px;
+}
+.blogText{
+    font-size: 18px;
+    font-weight: 300;
+}
+.blogTextFull{
+    font-size: 18px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
     text-align: left;
 }
+#natureNurtureImage{
+    background-image: url(../assets/road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#behaviorMattersImage{
+    background-image: url(../assets/investor_advisor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hershBookImage{
+    background-image: url(../assets/hershBook.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bfLinksImage{
+    background-image: url(../assets/mind.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bfConceptsImage{
+    background-image: url(../assets/herd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bfQuizzesImage{
+    background-image: url(../assets/surveyQuestion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*----services ----*/
 
+.serviceList{
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+.serviceList li{
+    list-style: disc;
+    font-size: 21px;
+    font-weight: 200;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.serviceImg img{
+    width: 100%;
+    margin-top: 25px;
+}
+.serviceBox{
+    width:100%;
+    height: 400px;
+    margin-left:0%;
+    margin-top:25px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 2px 2px #aeaeae;
+    color: #282828;
+    background-color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+#servicesBanner{
+    border-top: solid 2px #cccccc;
+    background-color: #f0f0f0;
+    padding-top: 50px;
+}
+.serviceHeader{
+   color: #ffffff;
+    width:100%;
+    height: 150px;
+    background-color: rgba(1,1,1,.5);
+}
+.serviceText{
+    padding: 2px 10px 0px 10px;
+    margin-top: 20px;
+}
+#researchHeaderImage{
+    background-image: url(../assets/ipadOnDesk.jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+#workshopHeaderImage{
+    background-image: url(../assets/meeting.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+#consultingHeaderImage{
+    background-image: url(../assets/app1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+/*----HomePage quote banner----*/
+#quoteBanner {
+    background-color: #161c5c;
+    color: #ffffff;
+    padding:50px 0px 20px 0px;
+    height: 350px;
+}
+.quote{
+   margin-top: 2%;
+}
+.quoteAuthor{
+    padding: 10px 0px 10px 0px;
+
+}
+/*---ResearchPage----*/
+
+#researchQuote{
+    background-image: url("../assets/womanOnBoat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+#researchQuoteWrapper{
+    padding:100px 15px 0px 15px;
+    height:500px;
+}
+#researchIntro{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    padding-top: 2%;
+}
+
+
+/*----teamPage----*/
+.bridgeBackground {
+    background-image: url(../assets/GGBBW.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    width: 100%;
+}
+
+.box{
+    width:70%;
+    height:200px;
+    margin-left: 10%;
+    margin-top: 25px;
+    text-align: left;
+    font-style: italic;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+    font-weight: 200;
+    line-height: 1em;
+    font-size: 18px;
+}
+.bioBox{
+    width:90%;
+    height: 300px;
+    margin-left:5%;
+    margin-top:25px;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    position: relative;
+}
+#researchTeam{
+
+}
+.bioText{
+    text-align: left;
+    font-size: 16px;
+    float:left;
+    margin-top: 10px;
+}
+.bioName{
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+}
+.bioTitle{
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+}
+.bioBoxImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+
+}
+#andreaImage {
+    background-image: url(../assets/andreaBW.png);
+}
+#anthonyImage {
+    background-image: url(../assets/anthonyBW.png);
+}
+#hershImage {
+    background-image: url(../assets/hershBW.png);
+}
+#shenbaImage {
+    background-image: url(../assets/shenbaBW.png);
+}
+#karenImage{
+
+}
 /*----SolutionsPage----*/
 .solutionsHeading {
     font-size: 36px;
@@ -1055,6 +1398,13 @@ nav ul li {
     margin-top: 50px;
 }
 
+.contactField{
+    margin-top: 5px;
+}
+.contactEmail{
+    margin-top: 5px;
+    height: 150px;
+}
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -1074,6 +1424,10 @@ nav ul li {
     }
 
     /*---- header tablet----*/
+    nav ul li {
+        text-align: center;
+
+    }
     /*---- footer tablet----*/
     .footer {
         position: relative;
@@ -1089,7 +1443,7 @@ nav ul li {
 
     /*---- layout tablet----*/
     .tallRow {
-        height: 490px;
+        height: 500px;
     }
 
     .medRow {
@@ -1106,21 +1460,58 @@ nav ul li {
         margin-bottom: 15px;
     }
 
-    #mainBanner {
-        padding-bottom: 0%;
+
+    .medImg img {
+
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
+    /*---- blog tablet----*/
 
-    #tagLine {
-        margin-bottom: 1%;
-        font-weight: 400;
+    #blogBanner{
+        height:450px;
+    }
+    .blogBox{
+        margin-top: 120px;
+        height:250px;
 
     }
-
-    #tagDescription {
-        width: 60%;
-        margin-left: 20%;
+    .blogBoxContent{
+        width: 100%;
+        font-size: 24px;
+        line-height: 1em;
+        font-weight: bold;
     }
-
+    #natureNurtureImage{
+        background-image: url(../assets/road200x300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #behaviorMattersImage{
+        background-image: url(../assets/investor_advisor200x300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #hershBookImage{
+        background-image: url(../assets/hershBook200x300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bfLinksImage{
+        background-image: url(../assets/mind200x300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bfConceptsImage{
+        background-image: url(../assets/herd200x300.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bfQuizzesImage{
+        background-image: url(../assets/surveyQuestion.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     /*---- solutions banner tablet----*/
     #introTop {
         height: 30px;
@@ -1219,9 +1610,35 @@ nav ul li {
     .engSolutions {
         font-size: 28px;
     }
+    #mainBanner {
+        height: 600px;
+    }
 
-    .carousel-inner {
-        height: 380px;
+    #myCarousel {
+        height: 600px;
+    }
+    .mainBackground{
+        width:100%;
+        background-image: url(../assets/wallStreetBrain3Tablet.jpg);
+    }
+    .carousel-caption {
+        font-size: 48px;
+        top: 40px;
+    }
+    .itemLabel {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    .itemContent {
+        font-size: 24px;
+    }
+
+    .box{
+    font-size: 26px;
+    }
+    .bridgeBackground {
+        height: 250px;
     }
 
     #dataNav {
@@ -1313,9 +1730,7 @@ nav ul li {
         display: none;
     }
 
-    .background {
-        background-image: url(../assets/stairs.jpg);
-    }
+
 
     /*---- header desktop----*/
     nav ul li {
@@ -1331,42 +1746,51 @@ nav ul li {
         height: 490px;
     }
 
-    .heading {
-        font-size: 42px;
-    }
+    .heading5{
+        font-size: 56px;
+        line-height: 1em;
 
+    }
     /*----HomePage main banner desktop----*/
-    #mainBanner {
-        background-color: rgba(251, 251, 251, .3);
-        padding-bottom: 8%;
+
+    .mainBackground {
+        background-image: url(../assets/wallStreetBrain1000x500.jpg);
     }
 
-    #tagLine {;
-        margin-bottom: 3%;
-        font-size: 48px;
+    .item {
+        height: 600px;
     }
 
-    #tagDescription {
-        margin-bottom: 10%;
-        font-size: 30px;
+    .itemLabel {
+        font-size: 32px;
     }
 
-    #introTagLine {
-        padding-bottom: 50px;
-        padding-top: 10px;
+    .itemContent {
+        font-size: 24px;
     }
-
     /*----HomePage intro banner desktop----*/
-    #intro {
-        width: 60%;
-        margin-left: 20%;
+    #introBanner{
+      height:550px;
+    }
+    .introTitle{
+
     }
 
-    .ipadImg img {
-        margin-top: 20%;
-        width: 400px;
+
+    .serviceBox{
+        width:80%;
+        margin-left:10%;
+
     }
 
+    /*----blog----*/
+    #blogBanner{
+        height:310px;
+    }
+
+    .blogBox{
+        margin-top: 10px;
+    }
     /*----solutionsPage desktop----*/
     #solutionsPage {
         margin-top: 60px;
@@ -1444,5 +1868,28 @@ nav ul li {
 /* end media query: screen, min-width 769px */
 
 
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev		 { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		 { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev		 { left: -25%; }
+}
 
 

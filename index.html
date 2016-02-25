@@ -14,9 +14,10 @@
     <title>Investmynd</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="javascript/modernizr.custom.js"></script>
+    <script src="js/bootstrap.js"></script>
     <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -30,7 +31,7 @@
 <div class="gridContainer clearfix">
 
 
-    <div class="background">
+
         <!--nav menu-->
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid fixed">
@@ -51,15 +52,11 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right ">
-                        <li><a href="solutions.html">
-                            <div class="solutions">Solutions</div>
-                        </a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="services.html"><div class="solutions">Services</div></a></li>
                         <li><a href="befi.html">Behavioral Finance</a></li>
-                        <li><a href="#">
-                            <div data-toggle="modal" data-target="#sendEmail">Contact Us</div>
-                        </a></li>
+                        <li><a href="#"><div data-toggle="modal" data-target="#sendEmail">Contact Us</div></a></li>
                         <li><a href="https://app.investmynd.com">Login</a></li>
-
                     </ul>
                 </div>
             </div>
@@ -71,126 +68,150 @@
         <!-- main banner -->
 
         <div class="container-fluid">
-            <div class="row" id="mainBanner">
-                <div id="tagLine" class="heading"> You may know your clients, <br>but do you understand them?<br></div>
-                <div id="tagDescription" class="heading3 ">Client Engagement Solutions Backed by Behavioral Finance
-                    Science <br><br></div>
-                <div class="buttonSquare medSmoke"><a href="mailto:demo@investmynd.com">Learn More</a></div>
-            </div>
-        </div>
-        <div id="introTagLine" class="heading1">
-            <div class="down"><img src="assets/downarrows.png"></div>
-            The Future of Wealth Management is Here
-        </div>
-
-        <!-- /main -->
-
-        <!-- impact banner -->
-        <div class="container-fluid">
-            <div id="introBanner" class="row tallRow">
-                <div class="heading col-sm-7">
-                    <div id="introTitle">You shouldn't have to choose between <br>high-tech or high-touch</div>
-                    <div id="intro" class="introText narrow">We provide data driven insights into the investor
-                        personality to help investors and their advisors engage in a more meaningful way and
-                        make better wealth decisions.
-                    </div>
-
-                </div>
-
-                <div class="col-sm-4 ipadImg"><img src="assets/app1.jpg">
-
-                    <div class="buttonSquare blue mailTo"><a href="mailto:demo@investmynd.com">Request a Demo</a></div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!--solutions-->
-
-        <div class="container-fluid">
-            <div id="solutionsBanner" class="row">
-
-                <div id="leftHome">
-                    <a href="solutions.html">
-                        <div id="solutionsNav" class="smallRow heading1">Solutions<br><img
-                                src="assets/rightArrowWhite.png"></div>
-                    </a>
-                    <a href="solutions.html#dataMgt">
-                        <div id="dataNav" class="smallRow">Client Data <br>Management<br><img
-                                src="assets/rightArrowWhite.png"></div>
-                    </a>
-                    <a href="solutions.html#clientEng">
-                        <div id="engNav" class="smallRow">Client Engagement<br><img src="assets/rightArrowWhite.png">
-                        </div>
-                    </a>
-                </div>
-
-                <div id="rightHome">
-
-                    <div class="container">
-                        <br>
-
-                        <div id="#myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+            <div id="mainBanner">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
                             <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="itemLabel">PAPERLESS CLIENT INTAKE</div>
-                                    <div class="itemContent">Bringing a new client on-board should be efficient and easy
-                                        for everyone - get started on the right foot with a paperless discovery process
-                                        launched from your ipad/tablet.
-                                    </div>
+                            <div class="carousel-inner mainBackground" role="listbox">
 
-                                </div>
-
-                                <div class="item ">
-                                    <div class="itemLabel">COMPREHENSIVE CLIENT PROFILES</div>
-                                    <div class="itemContent">Create dynamic client profiles including personal
-                                        demographics, financial and personal goals, investing preferences and
-                                        restrictions, assets/income/expenses, risk tolerance, lifestyle, financial
-                                        behavioral traits and biases, and more.
-                                    </div>
-
-                                </div>
-
-                                <div class="item">
-                                    <div class="itemLabel">INVESTOR BEHAVIOR INSIGHTS</div>
-                                    <div class="itemContent">Our comprehensive investor profile gets to the core of an
-                                        investor’s needs, decision making style, and attitude toward risk and investing.
-                                        Without it, it is nearly impossible to make the right investment decisions.
+                                <div class="item medSmoke active" id="investorsCarousel">
+                                    <div class="itemContent">
+                                        <div class="heading5 "><br><strong>Turning Behavioral Finance Theory into Action </strong> </div>
+                                        <div class="itemContent"><div class="itemLabel">CURRENT RESEARCH : Discovering the Investor Personality<br><br></div>
+                                            <strong>INVESTORS</strong> - Are you interested in learning about how your personality may be impacting your financial behavior?
+                                            We are currently seeking individuals to participate in our research. Our online survey takes just 15 minutes to
+                                            complete and provides you with immediate insights into your investor personality.<br><br></div>
+                                        <div class="buttonWide actionTransparent">Participate</div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="itemLabel">CLIENT ENGAGEMENT</div>
-                                    <div class="itemContent">Get clients to open up, become more engaged, and share more
-                                        information through interactive and highly engaging client facing tools. Never
-                                        lose a client because they think you don't understand their needs.
+
+                                <div class="item medSmoke" id="advisorsCarousel" >
+                                    <div class="itemContent">
+                                        <div class="heading5"><br><strong>Behavioral Finance Research, Consulting, and Technology for Wealth Managers</strong></div>
+                                        <div class="itemLabel">ADVISORS: You may know your clients, but do you understand them?<br></div>
+                                            Looking for ways to better understand what drives your clients? Our team of experts can help you implement best practices in
+                                        behavioral finance and leverage the latest technology to win and keep clients.<br><br>
+                                        <a href="#"><div data-toggle="modal" data-target="#sendEmail"><div class="buttonWide actionTransparent">Contact Us</div></div></a>
                                     </div>
                                 </div>
 
                             </div>
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                            </ol>
 
+
+                            <!-- Indicators -->
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
 
                         </div>
+            </div>
+            </div>
+        </div>
+        <!-- /main -->
+
+
+    <!--solutions-->
+
+    <div class="container-fluid">
+        <div class="row"><div id="servicesBanner">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="serviceBox">
+                        <div id="researchHeaderImage"><div class="serviceHeader italic heading5"><br>Research</div></div>
+
+                        <div class="serviceText heading3 narrow">Delivering Game Changing Insights</div>
+                        <div class="serviceText heading4 narrow">Cutting edge research led by experts
+                            in the fields of wealth management and behavioral finance</div>
                     </div>
                 </div>
 
+                <div class="col-sm-4">
+                    <div class="serviceBox">
+                        <div id="workshopHeaderImage"><div class="serviceHeader italic heading5"><br>Consulting</div></div>
+
+                        <div class="serviceText heading3 narrow">Driving the Future of Wealth Management</div>
+                        <div class="serviceText heading4 narrow">Wealth Management Consulting specializing in designing and implementing behavioral science
+                            and client engagement strategies</div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="serviceBox">
+                        <div id="consultingHeaderImage"><div class="serviceHeader italic heading5"><br>Technology</div></div>
+
+                        <div class="serviceText heading3 narrow">Enhancing the <br>Client Experience</div>
+                        <div class="serviceText heading4 narrow">Client profiling and investor personality analysis tools backed by behavioral finance science </div>
+                   </div>
+                </div>
+            </div>
+            <div class="row"><a href="#"><div data-toggle="modal" data-target="#sendEmail"><div class="buttonWide action">Contact Us</div></div></a></div>
+        </div></div>
+    </div>
+    <!--/solutions-->
+        <!-- intro banner -->
+        <div class="container-fluid">
+            <div class="row">
+            <div id="introBanner" >
+                <div class="col-sm-6">
+                    <div class="introTitle heading">What is Behavioral Finance? </div>
+                    <div class="introText narrow">Behavioral finance seeks to understand why people make the financial
+                        decisions they do and to identify the impact of those decisions.<br><br>
+                        <em>Investmynd</em> uses this understanding to help investors and their advisors make better wealth management decsions.
+                    </div>
+                    <div class="row"><br><a href="befi.html"><div class="buttonWide action">View All Resources</div></a></div>
+                    <div class="medImg"><img src="assets/hexagons.png"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="blogClip borderLeft">
+                            <img src="assets/squareroad.jpg"><div class="blogTitle"> Nature & Nurture:  What Drives Your Financial Decisions?</div>
+                            <div class="blogDate">February 2016 by Andrea Bornstein Bayer</div>
+                            <div class="blogText"><a href="#">Your financial habits have as much to do with nature - what’s in your DNA, as nurture - your life experiences.
+                                Understanding your investment personality, including how you think and feel about managing your wealth, provides insight into the forces that affect your investing behavior.  Pioneer in behavioral finance, Professor Hersh Shefrin,
+                                contends that this knowledge, used wisely, can help you become a smarter and potentially more confident investor ... read more</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blogClip borderLeft">
+                            <img src="assets/investor_advisor.jpg"><div class="blogTitle">Why Behavior Matters in Wealth Management</div>
+                            <div class="blogDate">January 2016 by Andrea Bornstein Bayer</div>
+                            <div class="blogText"><a href="#">Research shows that investors are more likely to fire an advisor for not understanding their needs than for poor portfolio performance. Taking the time to understand what is really driving an investor will increase client retention ... read more</a></div>
+                        </div>
+                        <div class="row"><br><a href="befi.html"><div class="buttonWide clear">View All</div></a></div></div>
+
+                </div>
+            </div>
+        </div></div>
+
+
+
+
+
+<!--quote-->
+    <div class="container-fluid">
+        <div class="row">
+        <div id="quoteBanner">
+            <div class="col-sm-12">
+                <div class="quote heading">“Any fool can know, <br>the point is to UNDERSTAND.” <br><br><em>~ Albert Einstein</em></div>
+                <div class="quoteAuthor"></div>
+                <a href="#"><div data-toggle="modal" data-target="#sendEmail"><div class="buttonWide action">Contact Us</div></div></a>
             </div>
         </div>
+    </div></div>
+<!--/quote-->
 
-        <!--/solutions-->
 
 
-    </div>
-
-    <!-- ContactModal -->
+<!-- ContactModal -->
     <div class="modal fade" id="sendEmail" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -200,23 +221,25 @@
                             aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="buttonSquare blue mailTo"><a href="mailto:demo@investmynd.com">Request a Demo</a></div>
+                    <div class="box">
+                        <input type="text" label="enterName" value="Name" class="contactField">*
+                        <input type="text" label="enterEmail" value="Email" class="contactField">*
+                        <input type="text" label="enterCompany" value="Company" class="contactField">
+                        <input type="text" label="enterSubject" value="Subject" class="contactField">
+                        <input type="text" label="enterComments" value="Comment" class="contactEmail">
+                        <a href="mailto:demo@investmynd.com"><div class="button action mailTo">Email Us</div></a>
+                    </div>
                     <div class="contactInfo soutionsText"><br><br>Wealth Technology Solutions, Inc.<br>11501 Dublin
-                        Blvd, Suite 200<br>Dublin, CA 94568<br>info@investmynd.com<br></div>
+                            Blvd, Suite 200<br>Dublin, CA 94568<br>info@investmynd.com<br></div>
                 </div>
-
             </div>
         </div>
     </div>
+</div>
     <!-- footer -->
 
     <div class="footer">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div id="copyright">&copy; 2015 Wealth Technology Solutions, Inc.</div>
+        <div id="copyright">&copy; 2016 Wealth Technology Solutions, Inc.</div>
     </div>
 
 
@@ -253,15 +276,16 @@
         // Animate navigation
         $('.down').click(function (event) {
             event.preventDefault();
-            $('html, body').animate({scrollTop: $("#introTagLine").offset().top}, 300);
+            $('html, body').animate({scrollTop: $("#mainBanner").offset().top}, 300);
         });
         $('.carousel').carousel({
             interval: 9000
+
         })
-
-
+        $(function(){
+            $('#mycarousel').carousel();
+        });
     </script>
-
 
 </div>
 </body>

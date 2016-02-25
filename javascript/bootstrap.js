@@ -514,7 +514,7 @@ if (typeof jQuery === 'undefined') {
 
       $this
         .trigger('focus')
-        .attr('aria-expanded', 'true')
+          .attr('aria-expanded', 'true')
 
       $parent
         .toggleClass('open')
