@@ -1,0 +1,6 @@
+steps:
+- name: gcr.io/teamneat/firebase
+  dir: './public/'
+  args: ['deploy', '--project=investmynd', '--only=hosting', '--token', '$_FIREBASE_TOKEN']
+
+
